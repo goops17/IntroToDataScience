@@ -29,7 +29,7 @@ train <- read.csv("train.csv", header = TRUE)
 test <- read.csv("test.csv", header = TRUE)
 
 # Add a "Survived" variable to the test set to allow for combining data sets
-test.survived <- data.frame(survived = rep("None", nrow(test)), test[,])
+test.survived <- data.frame(Survived = rep("None", nrow(test)), test[,])
 
 # Combine data sets
 data.combined <- rbind(train, test.survived)
